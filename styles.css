@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+#voltar {
+    font-size: 40px;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#elenco-feminino,
+#elenco-masculino {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 5px solid white;
+    justify-items: center; /* Adicionado para alinhar as imagens horizontalmente */
+}
+
+@media screen and (min-width: 768px) {
+    /* Tablet */
+    #elenco-feminino,
+    #elenco-masculino {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Desktop */
+    #elenco-feminino,
+    #elenco-masculino {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
