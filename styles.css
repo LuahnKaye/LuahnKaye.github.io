@@ -32,6 +32,10 @@ body{
 
 img{
   width: 200px;
+  border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
 }
 
 #elenco-masculino{
